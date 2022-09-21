@@ -1,0 +1,115 @@
+* {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../img/g3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tr:nth-child(even) {
+    background: #ddd3d3;
+    color: black;
+}
+
+.tr:nth-child(odd) {
+    background: #fff;
+    color: black;
+}
+
+.konten {
+    margin-top: 100px;
+    color: #fff;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.konten h1 {
+    font-size: 80px;
+}
+
+.konten .p {
+    font-size: 30px;
+}
+
+.i {
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+}
+
+p,
+h1 {
+    text-shadow: 1px 1px black;
+    margin: 1px;
+}
+
+.isi {
+    display: flex;
+    align-items: center;
+}
+
+.isi1 {
+    margin-right: 20px;
+}
+
+.isi1 .atas {
+    display: flex;
+}
+
+.atas p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.bawah p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
